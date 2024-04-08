@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Fira Code', monospace; 
+    margin: 0;
+    padding: 30px;
+    background-color: #282c34; /* Dark background */
+    color: #e8e8e8; /* Light text */
+}
+
+/* Container for Main Content */
+.main-container {
+    background-color: #1e2127; /* Slightly darker background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Website Title (H1) */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #f1c40f; /* Yellow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* File Upload Section */
+.file-upload {
+    margin-bottom: 25px;
+}
+
+.custom-file-upload {
+    background-color: #4e5f70; /* Blue-ish */
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #34495e; /* Slightly darker blue-ish */
+}
+
+/* Transcribe Button */
+.transcribe-button {
+    background-color: #2ecc71; /* Green */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transcribe-button:hover {
+    background-color: #27ae60; /* Slightly darker green */
+}
+
+/* Progress Bar */
+progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    appearance: none;
+    animation: progress-bar-fill 2s ease-in-out infinite;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #282c34; /* Same as background color */
+}
+
+progress::-webkit-progress-value {
+    background-color: #f1c40f; /* Yellow */
+}
+
+/* Progress Bar Animation */
+@keyframes progress-bar-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Result Area */
+#result {
+    width: 100%;
+    min-height: 180px;
+    border: 1px solid #b5b5b5;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: monospace;
+    background-color: #1e2127; /* Same as slightly darker background */
+    color: #e8e8e8; /* Same as light text */
+}
+
+/* Print Button */
+.print-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #9b59b6; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
